@@ -8,13 +8,13 @@ interface Props{
 
 const HeroInfoItem = ({color,textTitle,textInfo}:Props) => {
   return (
-    <Box bg="gray.800" padding={3} rounded="sm" mb={3}>
+    <Box bg="gray.800" padding={3} rounded="sm" mb={3} >
       <Flex
         justifyContent="space-between"
         alignItems="center"
         fontSize="sm"
         fontFamily="mono"
-        color={color}
+        color={color + ".400"}
       >
         <Text>{textTitle}</Text>
         <Text>{textInfo}</Text>

@@ -1,7 +1,6 @@
 import { Button, Flex, Heading, Text } from "@chakra-ui/react";
 import { Brain, Play } from "lucide-react";
-import CheckedItems from "./CheckedItems";
-import LabelSection from "./LabelSection";
+import {CheckedItems, LabelSection}  from "../ui";
 
 const HeroContent = () => {
   return (

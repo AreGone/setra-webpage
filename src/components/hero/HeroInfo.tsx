@@ -1,13 +1,22 @@
 import { Box, Flex, SimpleGrid, Text } from "@chakra-ui/react";
-import CircleDots from "./CircleDots";
 import HeroInfoItem from "./HeroInfoItem";
-import FeatureItem from "./FeatureItems";
+import CircleDots from "./CircleDots";
+import { FeatureItem } from "../ui";
 
 const HeroInfo = () => {
   const heroFeatures = [
     { featureTitle: "24/7", featureName: "Monitoring" },
     { featureTitle: "99.9%", featureName: "Accuacy" },
     { featureTitle: "<1s", featureName: "Response" },
+  ];
+  const heroInfoItem = [
+    {
+      color: "green",
+      textTitle: "AI Detection: Person Detection",
+      textInfo: "99.7%",
+    },
+    { color: "blue", textTitle: "Motion Analysis: Active", textInfo: "Zone 3" },
+    { color: "purple", textTitle: "Threat Level: Low", textInfo: "Normal" },
   ];
   return (
     <Box
@@ -37,22 +46,13 @@ const HeroInfo = () => {
             LIVE
           </Text>
         </Flex>
-        <HeroInfoItem
-          color={"green.400"}
-          textTitle={"AI Detection: Person Detection"}
-          textInfo={"99.7%"}
-        />
-        <HeroInfoItem
-          color={"blue.400"}
-          textTitle={"Motion Analysis: Active"}
-          textInfo={"Zone 3"}
-        />
-        <HeroInfoItem
-          color={"purple.400"}
-          textTitle={"Threat Level: Low"}
-          textInfo={"Normal"}
-        />
-
+        {heroInfoItem.map((info) => (
+          <HeroInfoItem
+            color={info.color}
+            textTitle={info.textTitle}
+            textInfo={info.textInfo}
+          />
+        ))}
         <Box
           position="absolute"
           top={0}
@@ -66,13 +66,15 @@ const HeroInfo = () => {
         ></Box>
       </Box>
       <SimpleGrid columns={3} gap={4}>
-        <FeatureItem
-          features={heroFeatures}
-          fontName="xs"
-          fontTitle="2xl"
-          padding="3"
-          variant="hero"
-        />
+        {heroFeatures.map((feature) => (
+          <FeatureItem
+            feature={feature}
+            fontName="xs"
+            fontTitle="2xl"
+            padding="3"
+            variant="hero"
+          />
+        ))}
       </SimpleGrid>
     </Box>
   );

@@ -1,10 +1,7 @@
-import {
-  GridItem,
-  SimpleGrid,
-} from "@chakra-ui/react";
+import { GridItem, SimpleGrid } from "@chakra-ui/react";
 import HeroContent from "./HeroContent";
-import Section from "./Section";
 import HeroInfo from "./HeroInfo";
+import { Section } from "../ui";
 
 const Hero = () => {
   return (
@@ -14,7 +11,7 @@ const Hero = () => {
           <HeroContent />
         </GridItem>
         <GridItem key="hero-Info" position="relative">
-         <HeroInfo /> 
+          <HeroInfo />
         </GridItem>
       </SimpleGrid>
     </Section>

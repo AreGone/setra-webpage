@@ -1,9 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import { Cpu } from "lucide-react";
 import AIFeatureGrid from "./AIFeatureGrid";
-import LabelSection from "./LabelSection";
-import MainHeadingGroup from "./MainHeadingGroup";
-import Section from "./Section";
+import { Section, LabelSection, MainHeadingGroup } from "../ui";
 
 const AiFeature = () => {
   const heading = "Intelligent Video Analytics Powered by AI";
@@ -21,7 +19,6 @@ const AiFeature = () => {
       </Box>
       <AIFeatureGrid />
     </Section>
-
   );
 };
 

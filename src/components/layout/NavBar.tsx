@@ -1,7 +1,9 @@
 import { Button, Flex, Group, HStack, Text } from "@chakra-ui/react";
-import { useColorModeValue } from "./ui/color-mode";
+
 import { Eye } from "lucide-react";
 import NavLink from "./NavLink";
+import { useColorModeValue } from "../ui/color-mode";
+
 function NavBar() {
   return (
     <Flex

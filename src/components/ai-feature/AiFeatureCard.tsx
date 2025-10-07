@@ -1,6 +1,7 @@
 import { Card, Flex } from "@chakra-ui/react";
-import CheckedItems from "./CheckedItems";
+
 import type { ReactNode } from "react";
+import { CheckedItems } from "../ui";
 
 export interface AiFeature {
   color: string;

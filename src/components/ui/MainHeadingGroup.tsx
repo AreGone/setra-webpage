@@ -1,6 +1,7 @@
 import { Text } from "@chakra-ui/react";
 import MainHeading from "./MainHeading";
 
+
 interface Props{
     heading: string;
     text: string;
