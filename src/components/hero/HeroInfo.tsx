@@ -2,22 +2,9 @@ import { Box, Flex, SimpleGrid, Text } from "@chakra-ui/react";
 import HeroInfoItem from "./HeroInfoItem";
 import CircleDots from "./CircleDots";
 import { FeatureItem } from "../ui";
+import { heroFeatures, heroInfoItem } from "./heroData";
 
 const HeroInfo = () => {
-  const heroFeatures = [
-    { featureTitle: "24/7", featureName: "Monitoring" },
-    { featureTitle: "99.9%", featureName: "Accuacy" },
-    { featureTitle: "<1s", featureName: "Response" },
-  ];
-  const heroInfoItem = [
-    {
-      color: "green",
-      textTitle: "AI Detection: Person Detection",
-      textInfo: "99.7%",
-    },
-    { color: "blue", textTitle: "Motion Analysis: Active", textInfo: "Zone 3" },
-    { color: "purple", textTitle: "Threat Level: Low", textInfo: "Normal" },
-  ];
   return (
     <Box
       bgGradient="to-br"

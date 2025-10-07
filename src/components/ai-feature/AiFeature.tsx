@@ -2,11 +2,10 @@ import { Box } from "@chakra-ui/react";
 import { Cpu } from "lucide-react";
 import AIFeatureGrid from "./AIFeatureGrid";
 import { Section, LabelSection, MainHeadingGroup } from "../ui";
+import { aiFeatureHeading, aiFeatureText } from "./aiFeatureData";
 
 const AiFeature = () => {
-  const heading = "Intelligent Video Analytics Powered by AI";
-  const text =
-    "Leverage cutting-edge artificial intelligence to transform your surveillance system into a proactive security solution.";
+  
   return (
     <Section variant="white" section={"simple"} id="AiFeature">
       <Box textAlign="center" mb={16}>
@@ -15,7 +14,7 @@ const AiFeature = () => {
           text={"Advanced AI Capbilities"}
           color="purple"
         />
-        <MainHeadingGroup heading={heading} text={text} />
+        <MainHeadingGroup heading={aiFeatureHeading} text={aiFeatureText} />
       </Box>
       <AIFeatureGrid />
     </Section>

@@ -1,11 +1,11 @@
 import { Card, Flex } from "@chakra-ui/react";
 
-import type { ReactNode } from "react";
+import type { ElementType } from "react";
 import { CheckedItems } from "../ui";
 
 export interface AiFeature {
   color: string;
-  icon: ReactNode;
+  icon: ElementType;
   cardTitle: string;
   cardDescription: string;
   checkedTexts: string[];
@@ -41,7 +41,7 @@ const AiFeatureCard = ({ feature }: Props) => {
           _groupHover={{ scale: "1.05" }}
           transition="transform"
         >
-          {feature.icon}
+          <feature.icon />
         </Flex>
       </Card.Header>
       <Card.Body gap={5}>
