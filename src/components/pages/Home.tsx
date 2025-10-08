@@ -2,6 +2,7 @@ import { Box } from "@chakra-ui/react";
 import { Hero } from "../hero";
 import { Stats } from "../stats";
 import { AiFeature } from "../ai-feature";
+import { HowItWorks } from "../how-it-works";
 
 
 const Home = () => {
@@ -10,7 +11,7 @@ const Home = () => {
       <Hero />
       <Stats />
       <AiFeature />
-      <Box backgroundColor={"blueviolet"}>How it works Section</Box>
+      <HowItWorks />
       <Box backgroundColor={"lavender"}>Benifit Section</Box>
       <Box backgroundColor={"lightcoral"}>CTA Section</Box>
       <Box backgroundColor={"gray"}>footer</Box>
