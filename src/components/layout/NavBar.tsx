@@ -1,8 +1,9 @@
-import { Button, Flex, Group, HStack, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Group, HStack, Text } from "@chakra-ui/react";
 
 import { Eye } from "lucide-react";
 import NavLink from "./NavLink";
 import { useColorModeValue } from "../ui/color-mode";
+import { CirclePulse } from "../ui";
 
 function NavBar() {
   return (
@@ -22,7 +23,10 @@ function NavBar() {
       zIndex="50"
     >
       <HStack alignItems="center" spaceX={3}>
-        <Eye color="#2563eb" />
+        <Box position="relative">
+          <Eye color="#2563eb" />
+          <CirclePulse size={3} bg={"purple"} varient={"nav"} />
+        </Box>
         <Text
           fontWeight={"bold"}
           fontSize="2xl"

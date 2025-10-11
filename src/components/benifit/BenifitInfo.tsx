@@ -1,6 +1,5 @@
 import { Box, Flex, Heading, SimpleGrid } from "@chakra-ui/react";
-import { FeatureItem, InfoBadge } from "../ui";
-import CircleDots from "../hero/CircleDots";
+import { CirclePulse, FeatureItem, InfoBadge } from "../ui";
 import BenifitInfoItem from "./BenifitInfoItem";
 import { benifitFeatures, benifitInfoItems } from "./BenifitData";
 
@@ -27,7 +26,7 @@ const BenifitInfo = () => {
             AI Detection Dashboard
           </Heading>
           <InfoBadge fontSize={"sm"} color={"green"}>
-            <CircleDots colors={["green.600"]} />
+            <CirclePulse size={2} bg={"green"} varient="simple" />
             Live
           </InfoBadge>
         </Flex>
