@@ -59,7 +59,8 @@ const HeroInfo = () => {
             fontName="xs"
             fontTitle="2xl"
             padding="3"
-            variant="hero"
+            rounded="lg"
+            bg="whiteAlpha.100"
           />
         ))}
       </SimpleGrid>

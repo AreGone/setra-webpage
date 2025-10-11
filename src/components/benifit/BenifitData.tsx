@@ -22,3 +22,29 @@ export const benifitItems = [
     text: "AI-powered search and analysis capabilities turn hours of investigation into minutes of precise results.",
   },
 ];
+
+export const benifitFeatures = [
+  { featureTitle: "847", featureText: "Events Today", colorTitle: "blue.600" },
+  { featureTitle: "99.9%", featureText: "Accuracy", colorTitle: "purple.600" },
+];
+
+export const benifitInfoItems = [
+  {
+    type: "Person Detected",
+    confidence: "99.7%",
+    status: "Normal",
+    color: "blue",
+  },
+  {
+    type: "Vehicle Entry",
+    confidence: "98.2%",
+    status: "Authorized",
+    color: "green",
+  },
+  {
+    type: "Motion Alert",
+    confidence: "94.5%",
+    status: "Investigating",
+    color: "yellow",
+  },
+];

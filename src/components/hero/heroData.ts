@@ -1,7 +1,7 @@
 export const heroFeatures = [
-  { featureTitle: "24/7", featureName: "Monitoring" },
-  { featureTitle: "99.9%", featureName: "Accuacy" },
-  { featureTitle: "<1s", featureName: "Response" },
+  { featureTitle: "24/7", featureText: "Monitoring" },
+  { featureTitle: "99.9%", featureText: "Accuacy" },
+  { featureTitle: "<1s", featureText: "Response" },
 ];
 export const heroInfoItem = [
   {

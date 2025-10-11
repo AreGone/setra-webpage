@@ -5,6 +5,5 @@ export {default as MainHeadingGroup} from "./MainHeadingGroup";
 export {default as Section} from "./Section";
 export {default as FeatureItem} from "./FeatureItem";
 export {default as TwoColGrid} from "./TwoColGrid"
-
-
+export {default as InfoBadge} from "./InfoBadge"
 

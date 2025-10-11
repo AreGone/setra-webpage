@@ -3,7 +3,9 @@ import { Hero } from "../hero";
 import { Stats } from "../stats";
 import { AiFeature } from "../ai-feature";
 import { HowItWorks } from "../how-it-works";
-import Benifit from "../benifit/Benifit";
+import { Benifit } from "../benifit";
+
+
 
 
 const Home = () => {

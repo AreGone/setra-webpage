@@ -2,14 +2,18 @@ import { Box, Text } from "@chakra-ui/react";
 
 interface Feature {
   featureTitle: string;
-  featureName: string;
+  featureText: string;
+  colorTitle?: string;
 }
 interface Props {
   feature: Feature;
   fontTitle: string;
   fontName: string;
-  padding?: string | number;
-  variant?: "hero" | "simple";
+  padding: string | number;
+  bg?: string;
+  rounded?: string;
+  colorText?: string;
+  shadow?: string;
 }
 
 const FeatureItem = ({
@@ -17,21 +21,26 @@ const FeatureItem = ({
   fontTitle,
   fontName,
   padding,
-  variant = "simple",
+  bg="transparent",
+  rounded="undefiend",
+  colorText="gray.300",
+  shadow=undefined
+  
 }: Props) => {
   return (
     <Box
       textAlign="center"
       p={padding}
-      bg={variant === "hero" ? "whiteAlpha.100" : "transparent"}
-      rounded={variant === "hero" ? "lg" : undefined}
+      bg={bg}
+      rounded={rounded}
+      shadow={shadow}
       key={feature.featureTitle}
     >
-      <Text fontSize={fontTitle} fontWeight={"bold"} color="white">
+      <Text fontSize={fontTitle} fontWeight={"bold"} color={feature.colorTitle || "white"}>
         {feature.featureTitle}
       </Text>
-      <Text fontSize={fontName} color="gray.300">
-        {feature.featureName}
+      <Text fontSize={fontName} color={colorText}>
+        {feature.featureText}
       </Text>
     </Box>
   );
