@@ -1,1 +1,1 @@
-export {default as AiFeature} from "./AiFeature"
+export { default } from "./AiFeature";

@@ -7,6 +7,7 @@ import {
 } from "./color-mode"
 import theme from "@/theme/foundations/colors"
 
+
 export function Provider(props: ColorModeProviderProps) {
   return (
     <ChakraProvider value={theme}>

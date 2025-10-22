@@ -1,9 +1,10 @@
-import { AiFeature } from "@/components/ai-feature";
-import { Benefit } from "@/components/benefit";
-import { CTA } from "@/components/cta";
-import { Hero } from "@/components/hero";
-import { HowItWorks } from "@/components/how-it-works";
-import { Stats } from "@/components/stats";
+
+import AiFeature from "@/components/ai-feature/AiFeature";
+import Benefit from "@/components/benefit/Benefit";
+import CTA from "@/components/cta/CTA";
+import Hero from "@/components/hero/Hero";
+import HowItWorks from "@/components/how-it-works/HowItWorks";
+import Stats from "@/components/stats/Stats";
 import { Box } from "@chakra-ui/react";
 
 
