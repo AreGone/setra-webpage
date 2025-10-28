@@ -1,17 +1,33 @@
 export const heroFeatures = [
-  { title: "24/7", text: "Monitoring" },
-  { title: "99.9%", text: "Accuacy" },
-  { title: "<1s", text: "Response" },
+  { id: 1, title: "24/7", text: "Monitoring" },
+  { id: 2, title: "99.9%", text: "Accuacy" },
+  { id: 3, title: "<1s", text: "Response" },
 ];
 export const heroInfoItem = [
+  { id: 1, color: "green", title: "Cognitive Layer:", text: "Adaptive" },
   {
-    color: "green",
-    title: "Cognitive Layer:",
-    text: "Adaptive",
+    id: 2,
+    color: "blue",
+    title: "Visual Search:",
+    text: "Expanding Context Space",
   },
-  { color: "blue", title: "Visual Search:", text: "Expanding Context Space" },
-  { color: "purple", title: "Scene Intelligence:", text: "Synced Across Zones" },
-  { color: "red", title: "System Pulse:", text: "Normal" },
+  {
+    id: 3,
+    color: "purple",
+    title: "Scene Intelligence:",
+    text: "Synced Across Zones",
+  },
+  { id: 4, color: "red", title: "System Pulse:", text: "Normal" },
 ];
 
-export const InoDotscolors = ["red.600", "yellow.600", "green.600"];
+export const InfoDotscolors = [
+  { id: 1, color: "red.600" },
+  { id: 2, color: "yellow.600" },
+  { id: 3, color: "green.600" },
+];
+
+export const checkedTexts = [
+  { id: 1, text: "Real-time AI Detection" },
+  { id: 2, text: "Cloud & On-premise" },
+  { id: 3, text: "24/7 Monitoring" },
+];

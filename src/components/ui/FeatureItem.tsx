@@ -1,9 +1,7 @@
 import type TitleGroup from "@/entities/TitleGroup";
 import { Box, Text } from "@chakra-ui/react";
 
-
-interface Props {
-  feature: TitleGroup;
+interface Props extends TitleGroup {
   fontTitle: string;
   fontName: string;
   padding: string | number;
@@ -14,15 +12,16 @@ interface Props {
 }
 
 const FeatureItem = ({
-  feature,
+  title,
+  text,
+  color = "white",
   fontTitle,
   fontName,
   padding,
-  bg="transparent",
-  rounded= undefined,
-  colorText="gray.300",
-  shadow=undefined
-  
+  bg = "transparent",
+  rounded = undefined,
+  colorText = "gray.300",
+  shadow = undefined,
 }: Props) => {
   return (
     <Box
@@ -31,13 +30,12 @@ const FeatureItem = ({
       bg={bg}
       rounded={rounded}
       shadow={shadow}
-      key={feature.title}
     >
-      <Text fontSize={fontTitle} fontWeight={"bold"} color={feature.color || "white"}>
-        {feature.title}
+      <Text fontSize={fontTitle} fontWeight={"bold"} color={color}>
+        {title}
       </Text>
       <Text fontSize={fontName} color={colorText}>
-        {feature.text}
+        {text}
       </Text>
     </Box>
   );

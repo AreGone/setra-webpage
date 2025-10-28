@@ -4,9 +4,9 @@ import { CheckCircle } from "lucide-react";
 
 
 
-const BenefitItem = ({ title,text }: TitleGroup) => {
+const BenefitItem = ({ title,text}: TitleGroup) => {
   return (
-    <Flex alignItems="start" spaceX={4}>
+    <Flex alignItems="start" spaceX={4} >
       <Box
         display="flex"
         height={6}

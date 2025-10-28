@@ -1,6 +1,7 @@
-import { Button, Flex, Heading, Text } from "@chakra-ui/react";
+import { Button, Flex, Heading, Stack, Text } from "@chakra-ui/react";
 import { Brain, Play } from "lucide-react";
 import { CheckedItems, LabelSection } from "../ui";
+import { checkedTexts } from "./heroData";
 
 const HeroContent = () => {
   return (
@@ -46,7 +47,7 @@ const HeroContent = () => {
           size="xl"
           _hover={{
             transform: "scale(1.03)",
-            bgImage: "gradientBluePurple_toR_700"
+            bgImage: "gradientBluePurple_toR_700",
           }}
         >
           <Play />
@@ -56,14 +57,11 @@ const HeroContent = () => {
           Get Free Trail
         </Button>
       </Flex>
-      <CheckedItems
-        texts={[
-          "Real-time AI Detection",
-          "Cloud & On-premise",
-          "24/7 Monitoring",
-        ]}
-        direction={"row"}
-      />
+      <Stack direction="row" spaceX={6} fontSize="sm" color="gray.600">
+        {checkedTexts.map((item) => (
+          <CheckedItems text={item.text} key={item.id} />
+        ))}
+      </Stack>
     </>
   );
 };

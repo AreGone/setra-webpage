@@ -1,7 +1,7 @@
 import { Box, Flex, HStack, SimpleGrid, Text } from "@chakra-ui/react";
 import HeroInfoItem from "./HeroInfoItem";
 import { CircleDot, FeatureItem } from "../ui";
-import { heroFeatures, heroInfoItem, InoDotscolors } from "./heroData";
+import { heroFeatures, heroInfoItem, InfoDotscolors } from "./heroData";
 
 const HeroInfo = () => {
   return (
@@ -26,8 +26,8 @@ const HeroInfo = () => {
       >
         <Flex justifyContent={"space-between"} alignItems={"center"} mb={4}>
           <HStack>
-            {InoDotscolors.map((color) => (
-              <CircleDot color={color} />
+            {InfoDotscolors.map((dot) => (
+              <CircleDot color={dot.color} key={dot.id} />
             ))}
           </HStack>
 
@@ -40,6 +40,7 @@ const HeroInfo = () => {
             title={info.title}
             text={info.text}
             color={info.color}
+            key={info.id}
           />
         ))}
         <Box
@@ -55,7 +56,9 @@ const HeroInfo = () => {
       <SimpleGrid columns={3} gap={4}>
         {heroFeatures.map((feature) => (
           <FeatureItem
-            feature={feature}
+          title={feature.title}
+            text={feature.text}
+            key={feature.id}
             fontName="xs"
             fontTitle="2xl"
             padding="3"

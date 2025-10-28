@@ -9,7 +9,7 @@ const BenefitContent = () => {
       <MainHeading title={benefitHeading} mb={8} />
       <VStack gap={6}>
         {benefitItems.map((item) => (
-          <BenefitItem title={item.title} text={item.text}  />
+          <BenefitItem title={item.title} text={item.text} key={item.id} />
         ))}
       </VStack>
     </Box>

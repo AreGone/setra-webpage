@@ -1,10 +1,7 @@
-
 import type TitleGroup from "@/entities/TitleGroup";
 import { Box, Flex, Text } from "@chakra-ui/react";
 
-
-
-const HeroInfoItem = ({ title, text,color }: TitleGroup) => {
+const HeroInfoItem = ({ title, text, color }: TitleGroup) => {
   return (
     <Box bg="gray.800" padding={3} rounded="sm" mb={3}>
       <Flex

@@ -15,7 +15,7 @@ const LabelSection = ({ title, icon, color }: TitleGroup) => {
       py={2}
       mb={6}
     >
-      <Icon as={icon} boxSize={6} />
+      <Icon as={icon} boxSize={6} me={2} />
       <Text>{title}</Text>
     </Box>
   );
