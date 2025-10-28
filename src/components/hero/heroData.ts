@@ -6,11 +6,12 @@ export const heroFeatures = [
 export const heroInfoItem = [
   {
     color: "green",
-    title: "AI Detection: Person Detection",
-    text: "99.7%",
+    title: "Cognitive Layer:",
+    text: "Adaptive",
   },
-  { color: "blue", title: "Motion Analysis: Active", text: "Zone 3" },
-  { color: "purple", title: "Threat Level: Low", text: "Normal" },
+  { color: "blue", title: "Visual Search:", text: "Expanding Context Space" },
+  { color: "purple", title: "Scene Intelligence:", text: "Synced Across Zones" },
+  { color: "red", title: "System Pulse:", text: "Normal" },
 ];
 
-export const InoDotscolors=["red.600", "yellow.600", "green.600"]
+export const InoDotscolors = ["red.600", "yellow.600", "green.600"];

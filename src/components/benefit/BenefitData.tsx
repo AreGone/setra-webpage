@@ -10,7 +10,7 @@ export const benefitItems = [
     text: "Advanced AI algorithms minimize false positives by 95%, ensuring security teams focus on real threats.",
   },
   {
-    title: "4/7 Automated Monitoring",
+    title: "24/7 Automated Monitoring",
     text: "AI never sleeps, providing continuous surveillance and instant alerts without human fatigue or oversight gaps.",
   },
   {
@@ -23,10 +23,7 @@ export const benefitItems = [
   },
 ];
 
-export const benefitFeatures = [
-  { title: "847", text: "Events Today", color: "blue.600" },
-  { title: "99.9%", text: "Accuracy", color: "purple.600" },
-];
+
 
 export const benefitInfoItems = [
   {
