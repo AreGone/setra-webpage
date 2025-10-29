@@ -1,0 +1,17 @@
+# Ignore dependencies and build outputs
+node_modules
+dist
+
+# Ignore git and Docker metadata
+.git
+.gitignore
+Dockerfile
+docker-compose.yml
+
+# OS / Editor files
+*.log
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
