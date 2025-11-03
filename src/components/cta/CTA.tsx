@@ -21,20 +21,6 @@ const CTA = () => {
           mb={4}
           gap={4}
         >
-          {/* <Link
-            bg="white"
-            color="blue.600"
-            rounded="lg"
-            _hover={{ bg: "gray.100" }}
-            transition="colors"
-            px={8}
-            py={4}
-            gap={2}
-            href=""
-          >
-            <Mail />
-            Request Demo
-          </Link> */}
           <RequestDemoLink
             color="blue.600"
             rounded="lg"
